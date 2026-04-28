@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BuiltBy2 — Estudio de desarrollo web en Cali, Colombia. Diseñamos y desarrollamos landing pages, páginas corporativas y portfolios profesionales para emprendedores y empresas colombianas.">
+  <meta name="keywords" content="desarrollo web colombia, páginas web cali, landing page colombia, diseño web colombia, builtby2">
+  <meta property="og:title" content="BuiltBy2 — Dos mentes. Un producto.">
+  <meta property="og:description" content="Estudio de desarrollo web en Cali, Colombia. Landing pages, páginas corporativas y portfolios a medida para emprendedores y empresas.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <title>BuiltBy2 — Dos mentes. Un producto.</title>
+
+  <!-- Google Fonts: Bricolage Grotesque + Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container" aria-label="Navegación principal">
+      <a href="#inicio" class="nav-logo">Built<span>By2</span></a>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#servicios" class="nav-link">Servicios</a></li>
+        <li><a href="#portafolio" class="nav-link">Portafolio</a></li>
+        <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contacto" class="btn-primary nav-cta">Cotiza tu proyecto</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navLinks">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="inicio" aria-label="Sección principal">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge" data-animate>
+            <i data-lucide="map-pin" aria-hidden="true"></i>
+            <span>Cali, Colombia</span>
+          </div>
+
+          <h1 class="hero-title" data-animate>
+            Sitios web que<br>
+            <em class="text-accent">convierten</em><br>
+            visitas en clientes.
+          </h1>
+
+          <p class="hero-subtitle" data-animate>
+            Somos Santiago y Daniel — dos desarrolladores de Cali que construimos páginas web a medida para emprendedores y empresas colombianas. Sin intermediarios, sin agencias. Directo con quien hace el trabajo.
+          </p>
+
+          <div class="hero-actions" data-animate>
+            <a href="#portafolio" class="btn-primary btn-lg">
+              Ver nuestro trabajo
+              <i data-lucide="arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="https://wa.me/573000000000?text=Hola%2C%20me%20interesa%20cotizar%20una%20p%C3%A1gina%20web%20con%20BuiltBy2"
+               class="btn-ghost btn-lg"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Abrir WhatsApp para hablar con BuiltBy2">
+              <i data-lucide="message-circle" aria-hidden="true"></i>
+              Hablemos por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-graphic">
+            <!-- Abstract geometric SVG decoration -->
+            <svg class="hero-svg" viewBox="0 0 520 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <pattern id="dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+                  <circle cx="2" cy="2" r="1.4" fill="#4580FF" opacity="0.18"/>
+                </pattern>
+                <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#00C6FF" stop-opacity="0.25"/>
+                  <stop offset="100%" stop-color="#00C6FF" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+
+              <!-- Dot grid background -->
+              <rect width="520" height="520" fill="url(#dots)"/>
+
+              <!-- Outer dashed ring -->
+              <circle cx="290" cy="260" r="200" stroke="#00C6FF" stroke-width="1" opacity="0.2" stroke-dasharray="6 5"/>
+
+              <!-- Middle ring -->
+              <circle cx="290" cy="260" r="145" stroke="#4580FF" stroke-width="1" opacity="0.3"/>
+
+              <!-- Glow center -->
+              <circle cx="290" cy="260" r="100" fill="url(#glow1)"/>
+
+              <!-- Top accent circle -->
+              <circle cx="290" cy="115" r="28" fill="#00C6FF" opacity="0.1"/>
+              <circle cx="290" cy="115" r="28" stroke="#00C6FF" stroke-width="1.5" opacity="0.7"/>
+              <circle cx="290" cy="115" r="6" fill="#00C6FF" opacity="0.9"/>
+
+              <!-- Rotating square -->
+              <rect x="155" y="195" width="58" height="58" rx="10"
+                    stroke="#4580FF" stroke-width="1.5" opacity="0.45"
+                    transform="rotate(18 184 224)"/>
+
+              <!-- Code editor mockup -->
+              <rect x="180" y="295" width="210" height="135" rx="12"
+                    fill="#0A1525" stroke="#1D3050" stroke-width="1.5"/>
+              <!-- Editor titlebar -->
+              <rect x="180" y="295" width="210" height="32" rx="12" fill="#122038"/>
+              <rect x="180" y="315" width="210" height="12" fill="#122038"/>
+              <!-- Traffic lights -->
+              <circle cx="201" cy="311" r="5" fill="#FF5F57" opacity="0.85"/>
+              <circle cx="218" cy="311" r="5" fill="#FEBC2E" opacity="0.85"/>
+              <circle cx="235" cy="311" r="5" fill="#28C840" opacity="0.85"/>
+              <!-- Code lines -->
+              <rect x="196" y="340" width="65" height="7" rx="3.5" fill="#00C6FF" opacity="0.75"/>
+              <rect x="196" y="356" width="108" height="7" rx="3.5" fill="#4580FF" opacity="0.55"/>
+              <rect x="196" y="372" width="85" height="7" rx="3.5" fill="#7B9BBF" opacity="0.4"/>
+              <rect x="196" y="388" width="42" height="7" rx="3.5" fill="#00C6FF" opacity="0.35"/>
+              <rect x="196" y="404" width="70" height="7" rx="3.5" fill="#4580FF" opacity="0.3"/>
+
+              <!-- Connector lines -->
+              <line x1="100" y1="310" x2="185" y2="310" stroke="#00C6FF" stroke-width="1" opacity="0.25" stroke-dasharray="4 3"/>
+              <line x1="390" y1="180" x2="430" y2="380" stroke="#4580FF" stroke-width="1" opacity="0.25" stroke-dasharray="4 3"/>
+
+              <!-- Small accent dots -->
+              <circle cx="415" cy="390" r="8" fill="#00C6FF" opacity="0.65"/>
+              <circle cx="140" cy="370" r="5" fill="#4580FF" opacity="0.8"/>
+              <circle cx="435" cy="155" r="7" fill="#00C6FF" opacity="0.4"/>
+              <circle cx="88" cy="210" r="4" fill="#4580FF" opacity="0.5"/>
+
+              <!-- Plus decorations -->
+              <text x="78" y="180" fill="#00C6FF" opacity="0.45" font-size="22" font-family="monospace">+</text>
+              <text x="448" y="275" fill="#4580FF" opacity="0.4" font-size="17" font-family="monospace">+</text>
+              <text x="350" y="450" fill="#00C6FF" opacity="0.25" font-size="14" font-family="monospace">{ }</text>
+            </svg>
+
+            <!-- Floating notification badges -->
+            <div class="float-badge float-badge-1">
+              <div class="float-icon">
+                <i data-lucide="check-circle-2" aria-hidden="true"></i>
+              </div>
+              <div class="float-text">
+                <strong>Entrega puntual</strong>
+                <span>100% de proyectos</span>
+              </div>
+            </div>
+
+            <div class="float-badge float-badge-2">
+              <div class="float-icon">
+                <i data-lucide="zap" aria-hidden="true"></i>
+              </div>
+              <div class="float-text">
+                <strong>100% a medida</strong>
+                <span>Sin plantillas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Background ambient glows -->
+      <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="stats-section" aria-label="Estadísticas">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item" data-animate>
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="30">0</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Proyectos entregados</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item" data-animate>
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="25">0</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Clientes satisfechos</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item" data-animate>
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="2">0</span>
+            </div>
+            <span class="stat-label">Años de experiencia</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item" data-animate>
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="100">0</span>
+              <span class="stat-suffix">%</span>
+            </div>
+            <span class="stat-label">Puntualidad en entregas</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICIOS ===== -->
+    <section class="section services-section" id="servicios" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-tag">Lo que hacemos</span>
+          <h2 class="section-title" id="services-title">Servicios diseñados<br>para crecer</h2>
+          <p class="section-subtitle">Cada proyecto es único. Trabajamos contigo para entender tu negocio y crear una presencia digital que realmente funcione.</p>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- Service 1: Landing Pages -->
+          <article class="service-card" data-animate>
+            <div class="service-card-inner">
+              <div class="service-card-top">
+                <div class="service-icon" aria-hidden="true">
+                  <i data-lucide="monitor"></i>
+                </div>
+                <div class="service-price">$600k – $1.2M COP</div>
+              </div>
+              <h3 class="service-name">Landing Pages</h3>
+              <p class="service-desc">Página de aterrizaje de alto impacto diseñada para convertir visitantes en leads o clientes desde el primer clic.</p>
+              <ul class="service-features" aria-label="Características incluidas">
+                <li><i data-lucide="check" aria-hidden="true"></i> Diseño a medida orientado a conversión</li>
+                <li><i data-lucide="check" aria-hidden="true"></i> Optimización para móvil y escritorio</li>
+                <li><i data-lucide="check" aria-hidden="true"></i> Integración WhatsApp y formularios</li>
+                <li><i data-lucide="check" aria-hidden="true"></i> SEO básico incluido</li>
+              </ul>
+              <a href="#contacto" class="service-cta">
+                Solicitar cotización
+                <i data-lucide="arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Service 2: Corporativas (featured) -->
+          <article class="service-card service-card-featured" data-animate>
+            <div class="service-card-inner">
+              <div class="service-badge" aria-label="Servicio más solicitado">Más popular</div>
+              <div class="service-card-top">
+                <div class="service-icon" aria-hidden="true">
+                  <i data-lucide="building-2"></i>
+                </div>
+                <div class="service-price">$1.5M – $3M COP</div>
+              </div>
+              <h3 class="service-name">Páginas Corporativas</h3>
+              <p class="service-desc">Sitio web institucional completo que proyecta profesionalismo y genera confianza en tus clientes potenciales.</p>
+              <ul class="service-features" aria-label="Características incluidas">
+                <li><i data-lucide="check" aria-hidden="true"></i> Múltiples páginas (inicio, servicios, contacto)</li>
+                <li><i data-lucide="check" aria-hidden="true"></i> Blog o sección de noticias opcional</li>
+                <li><i data-lucide="check" aria-hidden="true"></i> Formulario de contacto avanzado</li>
+                <li><i data-lucide="check" aria-hidden="true"></i> Panel de administración básico</li>
+              </ul>
+              <a href="#contacto" class="service-cta">
+                Solicitar cotización
+                <i data-lucide="arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Service 3: Portfolios -->
+          <article class="service-card" data-animate>
+            <div class="service-card-inner">
+              <div class="service-card-top">
+                <div class="service-icon" aria-hidden="true">
+                  <i data-lucide="layers"></i>
+                </div>
+                <div class="service-price">$800k – $1.5M COP</div>
+              </div>
+              <h3 class="service-name">Portfolios Profesionales</h3>
+              <p class="service-desc">Muestra tu trabajo de la forma correcta. Ideal para creativos, fotógrafos, arquitectos y profesionales independientes.</p>
+              <ul class="service-features" aria-label="Características incluidas">
+                <li><i data-lucide="check" aria-hidden="true"></i> Galería de proyectos dinámica</li>
+                <li><i data-lucide="check" aria-hidden="true"></i> Página de bio y contacto</li>
+                <li><i data-lucide="check" aria-hidden="true"></i> Diseño visual impactante</li>
+                <li><i data-lucide="check" aria-hidden="true"></i> CV descargable opcional</li>
+              </ul>
+              <a href="#contacto" class="service-cta">
+                Solicitar cotización
+                <i data-lucide="arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESO ===== -->
+    <section class="section process-section" id="proceso" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-tag">Cómo trabajamos</span>
+          <h2 class="section-title" id="process-title">Un proceso claro,<br>sin sorpresas</h2>
+          <p class="section-subtitle">Sabemos que tu tiempo vale. Por eso tenemos un flujo definido que te mantiene informado en cada etapa del proyecto.</p>
+        </div>
+
+        <div class="process-track">
+          <div class="process-line" aria-hidden="true"></div>
+
+          <div class="process-steps">
+            <div class="process-step" data-animate>
+              <div class="process-number" aria-hidden="true">01</div>
+              <div class="process-icon-wrap" aria-hidden="true">
+                <i data-lucide="message-circle"></i>
+              </div>
+              <div class="process-content">
+                <h3>Cotización</h3>
+                <p>Nos cuentas tu idea, tu negocio y lo que necesitas. Te enviamos una propuesta detallada con alcance, tiempos y precio en menos de 48 horas.</p>
+              </div>
+            </div>
+
+            <div class="process-step" data-animate>
+              <div class="process-number" aria-hidden="true">02</div>
+              <div class="process-icon-wrap" aria-hidden="true">
+                <i data-lucide="pencil-ruler"></i>
+              </div>
+              <div class="process-content">
+                <h3>Diseño</h3>
+                <p>Creamos los mockups visuales en Figma. Puedes ver exactamente cómo se verá tu sitio antes de que escribamos una sola línea de código.</p>
+              </div>
+            </div>
+
+            <div class="process-step" data-animate>
+              <div class="process-number" aria-hidden="true">03</div>
+              <div class="process-icon-wrap" aria-hidden="true">
+                <i data-lucide="code-2"></i>
+              </div>
+              <div class="process-content">
+                <h3>Desarrollo</h3>
+                <p>Programamos tu sitio con tecnologías modernas y te compartimos un enlace de previsualización para que revises el avance en tiempo real.</p>
+              </div>
+            </div>
+
+            <div class="process-step" data-animate>
+              <div class="process-number" aria-hidden="true">04</div>
+              <div class="process-icon-wrap" aria-hidden="true">
+                <i data-lucide="rocket"></i>
+              </div>
+              <div class="process-content">
+                <h3>Entrega</h3>
+                <p>Publicamos tu sitio, te entregamos los accesos y te explicamos cómo administrarlo. Seguimos disponibles 30 días post-lanzamiento.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PORTAFOLIO ===== -->
+    <section class="section portfolio-section" id="portafolio" aria-labelledby="portfolio-title">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-tag">Nuestro trabajo</span>
+          <h2 class="section-title" id="portfolio-title">Proyectos que<br>hablan por sí solos</h2>
+          <p class="section-subtitle">Cada proyecto es el resultado de horas de pensamiento, diseño y código. Aquí algunos de los más recientes.</p>
+        </div>
+
+        <!-- Filter buttons -->
+        <div class="portfolio-filter" role="group" aria-label="Filtrar proyectos por categoría" data-animate>
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="landing">Landing Pages</button>
+          <button class="filter-btn" data-filter="corporativa">Corporativas</button>
+          <button class="filter-btn" data-filter="portfolio">Portfolios</button>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="portfolio-grid" id="portfolioGrid" aria-live="polite">
+
+          <article class="portfolio-card" data-category="landing" data-animate>
+            <div class="portfolio-thumb thumb-1">
+              <div class="thumb-mockup" aria-hidden="true">
+                <div class="mockup-bar"></div>
+                <div class="mockup-hero"></div>
+                <div class="mockup-lines">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <a href="#" class="btn-primary btn-sm">Ver proyecto</a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div>
+                <h3>Dulce &amp; Canela</h3>
+                <span class="portfolio-tag">Landing Page</span>
+              </div>
+              <i data-lucide="external-link" aria-hidden="true"></i>
+            </div>
+          </article>
+
+          <article class="portfolio-card" data-category="corporativa" data-animate>
+            <div class="portfolio-thumb thumb-2">
+              <div class="thumb-mockup" aria-hidden="true">
+                <div class="mockup-bar"></div>
+                <div class="mockup-hero"></div>
+                <div class="mockup-lines">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <a href="#" class="btn-primary btn-sm">Ver proyecto</a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div>
+                <h3>Inversiones Peña</h3>
+                <span class="portfolio-tag">Corporativa</span>
+              </div>
+              <i data-lucide="external-link" aria-hidden="true"></i>
+            </div>
+          </article>
+
+          <article class="portfolio-card" data-category="portfolio" data-animate>
+            <div class="portfolio-thumb thumb-3">
+              <div class="thumb-mockup" aria-hidden="true">
+                <div class="mockup-bar"></div>
+                <div class="mockup-hero"></div>
+                <div class="mockup-lines">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <a href="#" class="btn-primary btn-sm">Ver proyecto</a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div>
+                <h3>Camila Vargas Arch.</h3>
+                <span class="portfolio-tag">Portfolio</span>
+              </div>
+              <i data-lucide="external-link" aria-hidden="true"></i>
+            </div>
+          </article>
+
+          <article class="portfolio-card" data-category="landing" data-animate>
+            <div class="portfolio-thumb thumb-4">
+              <div class="thumb-mockup" aria-hidden="true">
+                <div class="mockup-bar"></div>
+                <div class="mockup-hero"></div>
+                <div class="mockup-lines">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <a href="#" class="btn-primary btn-sm">Ver proyecto</a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div>
+                <h3>Café Origen</h3>
+                <span class="portfolio-tag">Landing Page</span>
+              </div>
+              <i data-lucide="external-link" aria-hidden="true"></i>
+            </div>
+          </article>
+
+          <article class="portfolio-card" data-category="corporativa" data-animate>
+            <div class="portfolio-thumb thumb-5">
+              <div class="thumb-mockup" aria-hidden="true">
+                <div class="mockup-bar"></div>
+                <div class="mockup-hero"></div>
+                <div class="mockup-lines">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <a href="#" class="btn-primary btn-sm">Ver proyecto</a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div>
+                <h3>Centro Médico Vida</h3>
+                <span class="portfolio-tag">Corporativa</span>
+              </div>
+              <i data-lucide="external-link" aria-hidden="true"></i>
+            </div>
+          </article>
+
+          <article class="portfolio-card" data-category="portfolio" data-animate>
+            <div class="portfolio-thumb thumb-6">
+              <div class="thumb-mockup" aria-hidden="true">
+                <div class="mockup-bar"></div>
+                <div class="mockup-hero"></div>
+                <div class="mockup-lines">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <a href="#" class="btn-primary btn-sm">Ver proyecto</a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div>
+                <h3>Mateo Rodríguez Studio</h3>
+                <span class="portfolio-tag">Portfolio</span>
+              </div>
+              <i data-lucide="external-link" aria-hidden="true"></i>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NOSOTROS ===== -->
+    <section class="section about-section" id="nosotros" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="about-left" data-animate>
+            <span class="section-tag">Nosotros</span>
+            <h2 class="section-title" id="about-title">Dos desarrolladores,<br>un solo objetivo</h2>
+            <p class="about-intro">Somos un estudio boutique en Cali, Colombia. No somos una agencia con decenas de empleados — somos Santiago y Daniel, y cada proyecto lo trabajamos nosotros directamente, desde el primer boceto hasta el día del lanzamiento.</p>
+
+            <div class="team-cards">
+              <div class="team-card">
+                <div class="team-avatar avatar-s" aria-label="Avatar de Santiago">S</div>
+                <div class="team-info">
+                  <h4>Santiago</h4>
+                  <span class="team-role">Lead Developer &amp; UX Designer</span>
+                  <p>Especialista en frontend moderno y experiencia de usuario. Convierte ideas en interfaces que la gente disfruta usar.</p>
+                </div>
+              </div>
+
+              <div class="team-card">
+                <div class="team-avatar avatar-d" aria-label="Avatar de Daniel">D</div>
+                <div class="team-info">
+                  <h4>Daniel</h4>
+                  <span class="team-role">Backend Developer &amp; Strategist</span>
+                  <p>Construye la arquitectura que hace que todo funcione. Enfocado en performance, seguridad y escalabilidad.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-right" data-animate>
+            <h3>¿Por qué elegirnos?</h3>
+            <div class="values-list">
+              <div class="value-item">
+                <div class="value-icon" aria-hidden="true">
+                  <i data-lucide="user-check"></i>
+                </div>
+                <div class="value-text">
+                  <h4>Trato personalizado</h4>
+                  <p>Hablas directamente con quien hace el trabajo. Sin intermediarios, sin malentendidos, sin filtros.</p>
+                </div>
+              </div>
+
+              <div class="value-item">
+                <div class="value-icon" aria-hidden="true">
+                  <i data-lucide="clock"></i>
+                </div>
+                <div class="value-text">
+                  <h4>Entregas a tiempo</h4>
+                  <p>Cumplimos los plazos acordados. No porque lo prometamos, sino porque es nuestro estándar.</p>
+                </div>
+              </div>
+
+              <div class="value-item">
+                <div class="value-icon" aria-hidden="true">
+                  <i data-lucide="headphones"></i>
+                </div>
+                <div class="value-text">
+                  <h4>Soporte post-lanzamiento</h4>
+                  <p>30 días de soporte incluido después de publicar tu sitio. No desaparecemos con el pago final.</p>
+                </div>
+              </div>
+
+              <div class="value-item">
+                <div class="value-icon" aria-hidden="true">
+                  <i data-lucide="trending-up"></i>
+                </div>
+                <div class="value-text">
+                  <h4>Orientados a resultados</h4>
+                  <p>No hacemos sitios bonitos que no convierten. Diseñamos para que tu negocio crezca de verdad.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIOS ===== -->
+    <section class="section testimonials-section" id="testimonios" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-tag">Lo que dicen</span>
+          <h2 class="section-title" id="testimonials-title">Clientes que ya<br>confían en nosotros</h2>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <div class="testimonial-card" data-animate>
+            <div class="testimonial-stars" aria-label="5 de 5 estrellas">
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+            </div>
+            <blockquote>
+              "Contraté a BuiltBy2 para nuestra landing page y el resultado superó mis expectativas. En dos semanas teníamos el sitio listo y en el primer mes duplicamos las consultas por WhatsApp. La comunicación fue impecable durante todo el proceso."
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">CM</div>
+              <div>
+                <strong>Carlos Mendoza</strong>
+                <span>CEO, EcoCargo Colombia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-animate>
+            <div class="testimonial-stars" aria-label="5 de 5 estrellas">
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+            </div>
+            <blockquote>
+              "Me encantó poder hablar directamente con los desarrolladores. No tener que pasar por un account manager ni esperar días para una respuesta hizo toda la diferencia. Mi portfolio quedó exactamente como lo imaginé."
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">LJ</div>
+              <div>
+                <strong>Laura Jiménez</strong>
+                <span>Fotógrafa, Studio Bella</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-animate>
+            <div class="testimonial-stars" aria-label="5 de 5 estrellas">
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+            </div>
+            <blockquote>
+              "Ya había intentado con otras agencias y siempre era lo mismo: costos altos, comunicación pésima y resultados mediocres. Con BuiltBy2 fue completamente diferente. Precio justo, respuestas rápidas y un sitio del que estoy orgulloso."
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">FT</div>
+              <div>
+                <strong>Felipe Torres</strong>
+                <span>Emprendedor, Cali</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="faq-layout">
+
+          <div class="faq-header" data-animate>
+            <span class="section-tag">FAQ</span>
+            <h2 class="section-title" id="faq-title">Preguntas<br>frecuentes</h2>
+            <p>Si tu pregunta no está aquí, escríbenos por WhatsApp — respondemos en menos de 2 horas en días hábiles.</p>
+            <a href="https://wa.me/573000000000?text=Hola%2C%20tengo%20una%20pregunta%20sobre%20los%20servicios%20de%20BuiltBy2"
+               class="btn-primary"
+               target="_blank"
+               rel="noopener noreferrer">
+              <i data-lucide="message-circle" aria-hidden="true"></i>
+              Preguntar por WhatsApp
+            </a>
+          </div>
+
+          <div class="faq-list" role="list">
+
+            <div class="faq-item" role="listitem" data-animate>
+              <button class="faq-question" aria-expanded="false">
+                <span>¿Cuánto tiempo tarda en entregarse un proyecto?</span>
+                <i data-lucide="plus" class="faq-icon" aria-hidden="true"></i>
+              </button>
+              <div class="faq-answer" role="region">
+                <p>Depende del tipo de proyecto. Una landing page la entregamos en 7–10 días hábiles. Una página corporativa toma entre 15–25 días. Un portfolio profesional entre 10–15 días. Siempre acordamos un plazo específico antes de comenzar.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" role="listitem" data-animate>
+              <button class="faq-question" aria-expanded="false">
+                <span>¿Qué incluye el precio?</span>
+                <i data-lucide="plus" class="faq-icon" aria-hidden="true"></i>
+              </button>
+              <div class="faq-answer" role="region">
+                <p>El precio incluye: diseño personalizado en Figma, desarrollo completo del sitio, optimización para móvil, SEO básico, integración de formularios y WhatsApp, y 30 días de soporte post-lanzamiento. El dominio y hosting se contratan por separado — te asesoramos en ese proceso.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" role="listitem" data-animate>
+              <button class="faq-question" aria-expanded="false">
+                <span>¿Cuántas revisiones están incluidas?</span>
+                <i data-lucide="plus" class="faq-icon" aria-hidden="true"></i>
+              </button>
+              <div class="faq-answer" role="region">
+                <p>Incluimos hasta 3 rondas de revisiones en la fase de diseño y 2 rondas en la fase de desarrollo. En la práctica, la mayoría de los proyectos se aprueban con menos. Las revisiones adicionales se cobran por separado a una tarifa acordada.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" role="listitem" data-animate>
+              <button class="faq-question" aria-expanded="false">
+                <span>¿El hosting está incluido?</span>
+                <i data-lucide="plus" class="faq-icon" aria-hidden="true"></i>
+              </button>
+              <div class="faq-answer" role="region">
+                <p>No incluimos hosting en el precio del proyecto, pero te asesoramos en la contratación del mejor servicio según tu necesidad. Para la mayoría de proyectos recomendamos opciones desde gratuitas (Vercel, Netlify) hasta planes desde $50.000 COP/mes para sitios con mayor tráfico.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" role="listitem" data-animate>
+              <button class="faq-question" aria-expanded="false">
+                <span>¿Ofrecen mantenimiento posterior al lanzamiento?</span>
+                <i data-lucide="plus" class="faq-icon" aria-hidden="true"></i>
+              </button>
+              <div class="faq-answer" role="region">
+                <p>Sí. Incluimos 30 días de soporte gratuito tras el lanzamiento para resolver bugs o ajustes menores. Si necesitas mantenimiento continuo, ofrecemos planes mensuales desde $200.000 COP/mes que incluyen actualizaciones de contenido, backups y monitoreo.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" role="listitem" data-animate>
+              <button class="faq-question" aria-expanded="false">
+                <span>¿Cuáles son las formas de pago?</span>
+                <i data-lucide="plus" class="faq-icon" aria-hidden="true"></i>
+              </button>
+              <div class="faq-answer" role="region">
+                <p>Trabajamos con un esquema de 50% al inicio y 50% a la entrega. Aceptamos transferencias bancarias (Bancolombia, Nequi, Daviplata) y tarjetas de crédito/débito. Para proyectos grandes podemos acordar un plan de pagos en tres cuotas.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" role="listitem" data-animate>
+              <button class="faq-question" aria-expanded="false">
+                <span>¿Trabajan solo con clientes en Cali?</span>
+                <i data-lucide="plus" class="faq-icon" aria-hidden="true"></i>
+              </button>
+              <div class="faq-answer" role="region">
+                <p>No, atendemos clientes en todo Colombia y el exterior. Todo el proceso se puede hacer de forma 100% remota — reuniones por videollamada, revisiones en Figma y entrega digital. Nunca es necesario vernos en persona para trabajar juntos.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" role="listitem" data-animate>
+              <button class="faq-question" aria-expanded="false">
+                <span>¿Puedo ver el diseño antes de que empiecen a programar?</span>
+                <i data-lucide="plus" class="faq-icon" aria-hidden="true"></i>
+              </button>
+              <div class="faq-answer" role="region">
+                <p>Absolutamente. Nuestro proceso siempre empieza por el diseño en Figma. No escribimos una sola línea de código hasta que el diseño esté aprobado por ti. Así te aseguras de que el resultado final sea exactamente lo que imaginaste.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="section contact-section" id="contacto" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-grid">
+
+          <div class="contact-info" data-animate>
+            <span class="section-tag">Hablemos</span>
+            <h2 class="section-title" id="contact-title">Cuéntanos tu idea,<br>nosotros la construimos</h2>
+            <p>Cada proyecto empieza con una conversación. Completa el formulario o escríbenos directamente — respondemos en menos de 2 horas en días hábiles.</p>
+
+            <a href="https://wa.me/573000000000?text=Hola%2C%20me%20interesa%20cotizar%20una%20p%C3%A1gina%20web%20con%20BuiltBy2"
+               class="whatsapp-btn"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Abrir WhatsApp para escribir a BuiltBy2">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              Escribir por WhatsApp
+            </a>
+
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon" aria-hidden="true">
+                  <i data-lucide="map-pin"></i>
+                </div>
+                <div>
+                  <strong>Cali, Colombia</strong>
+                  <span>Atendemos clientes en todo el país</span>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon" aria-hidden="true">
+                  <i data-lucide="mail"></i>
+                </div>
+                <div>
+                  <strong>hola@builtby2.co</strong>
+                  <span>Respuesta en menos de 24 horas</span>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon" aria-hidden="true">
+                  <i data-lucide="phone"></i>
+                </div>
+                <div>
+                  <strong>+57 300 000 0000</strong>
+                  <span>WhatsApp disponible</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper" data-animate>
+            <form class="contact-form" id="contactForm" novalidate aria-label="Formulario de contacto">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nombre">Nombre completo <span class="required" aria-hidden="true">*</span></label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label for="empresa">Empresa <span class="optional">(opcional)</span></label>
+                  <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa" autocomplete="organization">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Correo electrónico <span class="required" aria-hidden="true">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="tu@correo.com" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                  <label for="telefono">Teléfono / WhatsApp <span class="required" aria-hidden="true">*</span></label>
+                  <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000" required autocomplete="tel">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="tipo-proyecto">Tipo de proyecto <span class="required" aria-hidden="true">*</span></label>
+                  <select id="tipo-proyecto" name="tipo-proyecto" required>
+                    <option value="" disabled selected>Selecciona un tipo</option>
+                    <option value="landing">Landing Page</option>
+                    <option value="corporativa">Página Corporativa</option>
+                    <option value="portfolio">Portfolio Profesional</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="presupuesto">Presupuesto estimado <span class="required" aria-hidden="true">*</span></label>
+                  <select id="presupuesto" name="presupuesto" required>
+                    <option value="" disabled selected>Selecciona un rango</option>
+                    <option value="menos-600">Menos de $600.000 COP</option>
+                    <option value="600-1200">$600.000 – $1.200.000 COP</option>
+                    <option value="1200-2000">$1.200.000 – $2.000.000 COP</option>
+                    <option value="2000-3000">$2.000.000 – $3.000.000 COP</option>
+                    <option value="mas-3000">Más de $3.000.000 COP</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="descripcion">Descripción del proyecto <span class="required" aria-hidden="true">*</span></label>
+                <textarea id="descripcion" name="descripcion" rows="4" placeholder="Cuéntanos sobre tu proyecto: qué hace tu negocio, qué necesitas que haga el sitio, si tienes referencias de estilo, etc." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary btn-full">
+                <i data-lucide="send" aria-hidden="true"></i>
+                Enviar solicitud
+              </button>
+
+              <p class="form-note">
+                <i data-lucide="shield-check" aria-hidden="true"></i>
+                Tu información es confidencial. Te responderemos en menos de 24 horas.
+              </p>
+            </form>
+
+            <div class="form-success" id="formSuccess" hidden aria-live="polite">
+              <div class="success-icon" aria-hidden="true">
+                <i data-lucide="check-circle-2"></i>
+              </div>
+              <h3>¡Mensaje enviado!</h3>
+              <p>Gracias por contactarnos. Te responderemos en menos de 24 horas con una propuesta personalizada para tu proyecto.</p>
+              <a href="https://wa.me/573000000000?text=Hola%2C%20acabo%20de%20enviar%20el%20formulario%20en%20BuiltBy2"
+                 class="btn-primary"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                <i data-lucide="message-circle" aria-hidden="true"></i>
+                También puedes escribirnos por WhatsApp
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" aria-label="Pie de página">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#inicio" class="nav-logo footer-logo">Built<span>By2</span></a>
+          <p class="footer-tagline">Dos mentes. Un producto.</p>
+          <p class="footer-desc">Estudio de desarrollo web en Cali, Colombia. Construimos sitios web que hacen crecer tu negocio.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Seguirnos en Instagram" class="social-link">
+              <i data-lucide="instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#" aria-label="Conectar en LinkedIn" class="social-link">
+              <i data-lucide="linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="#" aria-label="Ver GitHub" class="social-link">
+              <i data-lucide="github" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul role="list">
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#faq">Preguntas frecuentes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Servicios</h4>
+          <ul role="list">
+            <li><a href="#servicios">Landing Pages</a></li>
+            <li><a href="#servicios">Páginas Corporativas</a></li>
+            <li><a href="#servicios">Portfolios Profesionales</a></li>
+            <li><a href="#contacto">Cotiza tu proyecto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contacto</h4>
+          <address>
+            <div class="footer-contact-item">
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+              <span>Cali, Valle del Cauca, Colombia</span>
+            </div>
+            <div class="footer-contact-item">
+              <i data-lucide="mail" aria-hidden="true"></i>
+              <span>hola@builtby2.co</span>
+            </div>
+            <div class="footer-contact-item">
+              <i data-lucide="phone" aria-hidden="true"></i>
+              <span>+57 300 000 0000</span>
+            </div>
+          </address>
+          <a href="https://wa.me/573000000000?text=Hola%2C%20me%20interesa%20cotizar%20una%20p%C3%A1gina%20web%20con%20BuiltBy2"
+             class="btn-primary footer-wa-btn"
+             target="_blank"
+             rel="noopener noreferrer">
+            Cotiza por WhatsApp
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 BuiltBy2 · Cali, Colombia · Todos los derechos reservados.</p>
+        <p>Diseñado y desarrollado con ♥ por Santiago &amp; Daniel</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
